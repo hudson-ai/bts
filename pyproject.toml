@@ -1,0 +1,14 @@
+[project]
+name = "bts"
+version = "0.0.1"
+authors = [
+    { name="Hudson Cooper", email="hncooper96@gmail.com" },
+]
+description = "Bits and bytes"
+dependencies = [
+    "numba",
+    "numpy"
+]
+
+[project.urls]
+source = "https://github.com/hudson-ai/bts"
