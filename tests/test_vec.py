@@ -1,4 +1,4 @@
-from bts import pack, unpack
+from byts import pack, unpack
 
 def test_pack_unpack():
     for n in range(1, 1000):

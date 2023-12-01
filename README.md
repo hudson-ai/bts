@@ -1,3 +1,3 @@
-# bts
+# byts
 
-Bits and bytes.
+Everything is b*ts.

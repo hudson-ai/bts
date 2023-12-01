@@ -1,6 +1,9 @@
+"""
+vec to int
+"""
+
 import numba
 import numpy as np
-
 
 @numba.njit()
 def pack(l):
@@ -9,7 +12,6 @@ def pack(l):
         if b:
             s = s | (b << i)
     return s
-
 
 @numba.njit()
 def unpack(s):
@@ -20,7 +22,6 @@ def unpack(s):
             l[i] = 1
     return l[::-1]
 
-
 @numba.njit()
 def encode_standard_basis(u, n):
     l = np.zeros(n, dtype=np.uint8)
@@ -29,9 +30,7 @@ def encode_standard_basis(u, n):
             l[i] = 1
     return l
 
-
 @numba.njit()
 def encode(u, n):
     l = encode_standard_basis(u, n)
     return pack(l)
-

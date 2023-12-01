@@ -1,4 +1,4 @@
-PKG = bts
+PKG = byts
 
 build:
 	pip install build
